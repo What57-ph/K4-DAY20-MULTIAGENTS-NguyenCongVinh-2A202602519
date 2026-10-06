@@ -29,6 +29,8 @@ def make_model():
     model_options = {}
     if not (model_id == "gpt-6-luna" or model_id.startswith("gpt-6-luna-")):
         model_options["temperature"] = float(os.getenv("LAB_TEMPERATURE", "0"))
+    else:
+        model_options["reasoning_effort"] = "none"
 
     if endpoint and key and deployment:
         if "openai.azure.com" in endpoint or "cognitiveservices.azure.com" in endpoint:

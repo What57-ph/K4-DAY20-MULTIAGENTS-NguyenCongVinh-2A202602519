@@ -1,23 +1,23 @@
 {
   "task": "code-learn",
-  "condition": "skills-auto",
+  "condition": "skills-auto2",
   "role": "learn",
   "error": null,
-  "timestamp": "2026-10-06T08:29:49.200704+00:00",
-  "skills_sha256": "0adea3aaf83f9914ecb671394d0de5f3acad7cf6e2ec98dc80759c18b519112d",
-  "seconds": 45.8,
+  "timestamp": "2026-10-06T09:02:49.358783+00:00",
+  "skills_sha256": "80abd845df0213e2b87d37d020f44c4c2d996fdd43aaa777fe6fd5d4a0290d36",
+  "seconds": 46.1,
   "tokens": {
-    "input": 153333,
-    "output": 2025,
-    "total": 155358
+    "input": 127171,
+    "output": 1192,
+    "total": 128363
   },
-  "tool_calls": 24,
+  "tool_calls": 26,
   "subagent_calls": 0,
   "skills_read": 2,
   "skills_modified": false,
-  "final_message": "Fixed price parsing for comma-separated and accounting-style values, implemented half-up discount rounding, made low-stock results strictly filtered and case-insensitively sorted, and added CSV quoting for special names. Added regression tests and an Unreleased changelog entry. All 11 tests pass.",
-  "score": 0.8,
-  "passed": 8,
+  "final_message": "Updated `workspace/inventory/pricing.py`, `workspace/inventory/report.py`, and `workspace/inventory/export.py` to match their docstrings, and recorded the fixes in `workspace/CHANGELOG.md`. The test suite passes: 6 tests passed.",
+  "score": 0.6,
+  "passed": 6,
   "total": 10,
   "checks": [
     {
@@ -57,13 +57,13 @@
     },
     {
       "name": "rule_type_hints",
-      "passed": true,
-      "detail": ""
+      "passed": false,
+      "detail": "RULE: every public function (name not starting with '_') in the package has type annotations on all parameters and on the return value."
     },
     {
       "name": "rule_regression_tests",
-      "passed": true,
-      "detail": ""
+      "passed": false,
+      "detail": "RULE: add tests/test_regressions.py with one test function per bug you fixed (at least 3); the file must pass."
     },
     {
       "name": "rule_changelog",

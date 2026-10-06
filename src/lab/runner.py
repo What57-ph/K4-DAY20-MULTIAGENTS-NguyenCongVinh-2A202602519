@@ -21,6 +21,7 @@ CONDITIONS = {
     "baseline": {"mode": "single", "skills_dir": None},
     "subagents": {"mode": "subagents", "skills_dir": None},
     "skills-auto": {"mode": "single", "skills_dir": "skills/auto"},
+    "skills-auto2": {"mode": "single", "skills_dir": "skills/auto2"},
 }
 
 # Data tasks may need more graph steps than the original 60-step default when

@@ -1,23 +1,23 @@
 {
   "task": "logs-learn",
-  "condition": "skills-auto",
+  "condition": "skills-auto2",
   "role": "learn",
   "error": null,
-  "timestamp": "2026-10-06T08:32:34.747096+00:00",
-  "skills_sha256": "0adea3aaf83f9914ecb671394d0de5f3acad7cf6e2ec98dc80759c18b519112d",
-  "seconds": 59.7,
+  "timestamp": "2026-10-06T09:22:16.007122+00:00",
+  "skills_sha256": "80abd845df0213e2b87d37d020f44c4c2d996fdd43aaa777fe6fd5d4a0290d36",
+  "seconds": 44.3,
   "tokens": {
-    "input": 147474,
-    "output": 5355,
-    "total": 152829
+    "input": 95662,
+    "output": 3529,
+    "total": 99191
   },
-  "tool_calls": 16,
+  "tool_calls": 14,
   "subagent_calls": 0,
-  "skills_read": 2,
+  "skills_read": 1,
   "skills_modified": false,
-  "final_message": "Created `workspace/errors.json` with 25 ERROR/CRITICAL entries, UTC-normalized timestamps, attached traceback exceptions and repeat counts, and service totals. JSON validation passed.",
-  "score": 0.3333333333333333,
-  "passed": 3,
+  "final_message": "Created `workspace/errors.json` with ERROR and CRITICAL entries only, normalized timestamps to UTC, extracted traceback endings, applied repeat counts, and computed service totals.",
+  "score": 0.1111111111111111,
+  "passed": 1,
   "total": 9,
   "checks": [
     {
@@ -27,8 +27,8 @@
     },
     {
       "name": "entry_count",
-      "passed": true,
-      "detail": ""
+      "passed": false,
+      "detail": "wrong number of entries (got 24)"
     },
     {
       "name": "timestamps_utc",
@@ -47,8 +47,8 @@
     },
     {
       "name": "counts_by_service",
-      "passed": true,
-      "detail": ""
+      "passed": false,
+      "detail": "counts_by_service: wrong values"
     },
     {
       "name": "rule_service_names",

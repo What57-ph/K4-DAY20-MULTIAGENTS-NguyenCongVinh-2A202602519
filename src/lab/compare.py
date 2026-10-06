@@ -6,7 +6,7 @@ import argparse
 import json
 from pathlib import Path
 
-ORDER = ["baseline", "subagents", "skills-auto"]
+ORDER = ["baseline", "subagents", "skills-auto", "skills-auto2"]
 
 
 def load_runs(results_dir="results") -> list[dict]:
